@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Soulwinning</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baptist Soul Winning Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            color: #007bff;
+        }
+        .section p {
+            margin: 0.5rem 0;
+        }
+        .scripture {
+            font-style: italic;
+            color: #555;
+        }
+        .scripture a {
+            color: #007bff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .scripture a:hover {
+            text-decoration: underline;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 1rem;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .popup h3 {
+            margin-top: 0;
+        }
+        .popup .close {
+            cursor: pointer;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        footer {
+            text-align: center;
+            margin: 2rem 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baptist Soul Winning Guide</h1>
+        <p>"The fruit of the righteous is a tree of life; and he that winneth souls is wise." - Proverbs 11:30</p>
+    </header>
+
+    <div class="container">
+        <!-- Section 1 -->
+        <div class="section">
+            <h2>Understanding the Call to Soul Winning</h2>
+            <p><strong>Description:</strong> Soul winning is the act of sharing the Gospel to bring others to faith in Jesus Christ. It is a divine mandate given to all believers.</p>
+            <p><strong>Illustration:</strong> Imagine a lighthouse guiding ships to safety during a storm. Soul winners are like that lighthouse, leading others to the safety of salvation.</p>
+            <p class="scripture">Key Scripture: <a href="#" onclick="showPopup('Matthew 28:19-20', 'Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you.')">Matthew 28:19-20</a>, <a href="#" onclick="showPopup('Mark 16:15', 'Go ye into all the world, and preach the gospel to every creature.')">Mark 16:15</a></p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li><a href="#" onclick="showPopup('What is soul winning?', 'Soul winning is sharing the Gospel with the purpose of leading others to Christ, as Jesus commanded in the Great Commission.')">What is soul winning?</a></li>
+                <li><a href="#" onclick="showPopup('Why is it essential for every believer?', 'It is essential because it is a direct command from Jesus and reflects God’s heart for the lost.')">Why is it essential for every believer?</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section">
+            <h2>Preparing Your Heart and Mind</h2>
+            <p><strong>Description:</strong> Effective soul winning begins with a prepared heart and mind. Prayer and a burden for the lost are key components.</p>
+            <p><strong>Illustration:</strong> A farmer does not plant seeds without preparing the soil first. Similarly, we must prepare spiritually to plant the seeds of the Gospel.</p>
+            <p class="scripture">Key Scripture: <a href="#" onclick="showPopup('1 Peter 3:15', 'But sanctify the Lord God in your hearts: and be ready always to give an answer to every man that asketh you a reason of the hope that is in you with meekness and fear.')">1 Peter 3:15</a>, <a href="#" onclick="showPopup('Colossians 4:5-6', 'Walk in wisdom toward them that are without, redeeming the time. Let your speech be always with grace, seasoned with salt, that ye may know how ye ought to answer every man.')">Colossians 4:5-6</a></p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li><a href="#" onclick="showPopup('The role of prayer in soul winning', 'Prayer connects us to God’s power, which is essential for effective soul winning.')">The role of prayer in soul winning</a></li>
+                <li><a href="#" onclick="showPopup('Developing a compassionate heart for the lost', 'Compassion for the lost motivates believers to share the Gospel with urgency and love.')">Developing a compassionate heart for the lost</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section">
+            <h2>Presenting the Gospel</h2>
+            <p><strong>Description:</strong> Presenting the Gospel involves clearly explaining humanity's need for salvation and the redemptive work of Jesus Christ.</p>
+            <p><strong>Illustration:</strong> Think of the Gospel as a bridge that connects a sinful humanity to a holy God. Without the bridge, there is no way to cross.</p>
+            <p class="scripture">Key Scripture: <a href="#" onclick="showPopup('Romans 10:9-10', 'That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation.')">Romans 10:9-10</a>, <a href="#" onclick="showPopup('John 3:16', 'For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.')">John 3:16</a></p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+              
+              
+                <li><a href="https://jerrycastrojr.github.io/SoulWinning/romansroad" onclick="showPopup('Using the \"Romans Road\" method', 'The Romans Road method uses key verses from the book of Romans to clearly explain salvation.')">Using the "Romans Road" method</a></li>
+                <li><a href="#" onclick="showPopup('Sharing your personal testimony', 'Your personal testimony is a powerful tool to show how God’s grace has transformed your life.')">Sharing your personal testimony</a></li>
+            </ul>
+        </div>
+      
+       <!-- Sinner's Prayer Section -->
+        <div class="section">
+            <h2>The Sinner's Prayer</h2>
+            <p><strong>Description:</strong> The Sinner's Prayer is a way to express repentance, faith in Jesus Christ, and the desire to receive Him as Savior.</p>
+            <p><strong>Illustration:</strong> Think of this prayer as a heartfelt conversation with God, where a person acknowledges their need for Him and accepts His gift of salvation.</p>
+            <p><strong>The Prayer:</strong></p>
+            <blockquote>
+                Dear God,
+                <br> I know I am a sinner and I ask for Your forgiveness. I believe Jesus Christ is Your Son. I believe that He died for my sin and that You raised Him to life. I want to trust Him as my Savior and follow Him as Lord from this day forward. Guide my life and help me to do Your will. I pray this in the name of Jesus. Amen.
+            </blockquote>
+        </div>
+   
+
+
+        <!-- Section 4 -->
+        <div class="section">
+            <h2>Handling Questions and Objections</h2>
+            <p><strong>Description:</strong> Soul winning often involves addressing doubts and objections. Responding with wisdom and grace can help remove barriers to belief.</p>
+            <p><strong>Illustration:</strong> A patient teacher answering a curious student's questions helps the student understand better. Similarly, soul winners should address questions patiently.</p>
+            <p class="scripture">Key Scripture: <a href="#" onclick="showPopup('2 Timothy 2:24-25', 'And the servant of the Lord must not strive; but be gentle unto all men, apt to teach, patient, In meekness instructing those that oppose themselves; if God peradventure will give them repentance to the acknowledging of the truth.')">2 Timothy 2:24-25</a>, <a href="#" onclick="showPopup('James 1:5', 'If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.')">James 1:5</a></p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li><a href="#" onclick="showPopup('How to stay patient and respectful', 'Staying patient and respectful shows Christ-like character and opens doors for meaningful conversations.')">How to stay patient and respectful</a></li>
+                <li><a href="#" onclick="showPopup('Answering common objections to the faith', 'Prepare to address common questions like the problem of evil, science vs. faith, and more.')">Answering common objections to the faith</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="section">
+            <h2>Following Up with New Believers</h2>
+            <p><strong>Description:</strong> New believers need guidance and encouragement to grow in their faith.</p>
+            <p><strong>Illustration:</strong> A gardener tends to young plants to help them grow strong and healthy. Likewise, we should nurture new believers in their spiritual journey.</p>
+            <p class="scripture">Key Scripture: <a href="#" onclick="showPopup('Matthew 28:20', 'Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.')">Matthew 28:20</a></p>
+            <p><strong>Key Points:</strong></p>
+            <ul>
+                <li><a href="#" onclick="showPopup('Encouraging consistent Bible study', 'Consistent Bible study helps new believers grow in their understanding of God’s word.')">Encouraging consistent Bible study</a></li>
+                <li><a href="#" onclick="showPopup('Helping them find a local church community', 'Joining a local church provides fellowship and discipleship opportunities for new believers.')">Helping them find a local church community</a></li>
+            </ul>
+        </div>
+       </div>
+
+       
+    <div id="popup" class="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-content"></p>
+        <button class="close" onclick="closePopup()">Close</button>
+    </div>
+    <div id="overlay" class="overlay" onclick="closePopup()"></div>
+
+    <footer>
+        <p>&copy; 2024 Baptist Soul Winning Guide. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showPopup(title, content) {
+            document.getElementById('popup-title').innerText = title;
+            document.getElementById('popup-content').innerText = content;
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
