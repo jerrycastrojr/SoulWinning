@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>romansroad</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romans Road Explanation</title>
+    <style>
+        /* Popup style */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 60%;
+            max-width: 800px;
+            overflow-y: auto;
+        }
+        #popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        #popup h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        #popup p {
+            margin-bottom: 15px;
+        }
+        #illustration {
+            text-align: center;
+            margin: 20px 0;
+        }
+        #illustration img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li><a href="#" onclick="showRomansRoad()">Using the "Romans Road" method</a></li>
+</ul>
+
+<!-- The Popup Modal -->
+<div id="popup-overlay"></div>
+<div id="popup">
+    <h2 id="popup-title"></h2>
+    <div id="popup-content"></div>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+<script>
+    // Function to display the popup
+    function showPopup(title, content) {
+        document.getElementById('popup-title').innerText = title;
+        document.getElementById('popup-content').innerHTML = content;
+        document.getElementById('popup').style.display = 'block';
+        document.getElementById('popup-overlay').style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+        document.getElementById('popup-overlay').style.display = 'none';
+    }
+
+    // Function to show the Romans Road explanation
+    function showRomansRoad() {
+        const romansRoad = [
+            {
+                verse: "Romans 3:23 (KJV)",
+                text: "For all have sinned, and come short of the glory of God.",
+                explanation: "This verse tells us that every person has sinned. No one is perfect, and we all fall short of God's standards."
+            },
+            {
+                verse: "Romans 6:23 (KJV)",
+                text: "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.",
+                explanation: "Sin has consequences: death, which means eternal separation from God. But God offers the free gift of eternal life through Jesus."
+            },
+            {
+                verse: "Romans 5:8 (KJV)",
+                text: "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
+                explanation: "God’s love is shown in that even when we were sinners, He sent Jesus to die for us, offering salvation despite our unworthiness."
+            },
+            {
+                verse: "Romans 10:9-10 (KJV)",
+                text: "That if thou shalt confess with thy mouth the Lord Jesus, and shalt believe in thine heart that God hath raised him from the dead, thou shalt be saved. For with the heart man believeth unto righteousness; and with the mouth confession is made unto salvation.",
+                explanation: "Salvation is available through faith. To receive it, we must believe in Jesus and confess Him as Lord."
+            },
+            {
+                verse: "Romans 10:13 (KJV)",
+                text: "For whosoever shall call upon the name of the Lord shall be saved.",
+                explanation: "Anyone who calls on Jesus and acknowledges Him as Lord will be saved, no matter their past or sins."
+            }
+        ];
+
+        // Creating the HTML content for the popup
+        let content = "<h3>Romans Road to Salvation:</h3>";
+        romansRoad.forEach(item => {
+            content += `<p><strong>${item.verse}</strong><br>${item.text}<br><i>${item.explanation}</i></p>`;
+        });
+
+        // Adding the illustration section
+        content += `
+        <div id="illustration">
+            <img src="https://via.placeholder.com/600x300.png?text=Romans+Road+Illustration" alt="Romans Road Illustration">
+            <p><i>Illustration: A visual representation of the Romans Road to salvation.</i></p>
+        </div>`;
+
+        // Show the popup with the explanation and illustration
+        showPopup("The Romans Road", content);
+    }
+
+    // Add the function call when the list item is clicked
+    document.querySelector('a[href="#"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        showRomansRoad();
+    });
+</script>
+
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
