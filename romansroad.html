@@ -29,8 +29,10 @@
             z-index: 1000;
             width: 60%;
             max-width: 800px;
-            overflow-y: auto;
+            max-height: 80%; /* Max height for scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
         }
+
         #popup-overlay {
             display: none;
             position: fixed;
@@ -41,33 +43,39 @@
             background-color: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+
         #popup h2 {
             font-size: 24px;
             margin-bottom: 10px;
         }
+
         #popup p {
             margin-bottom: 15px;
         }
-        #illustration {
-            text-align: center;
-            margin: 20px 0;
+
+        #popup button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
         }
-        #illustration img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+        #popup button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
 <ul>
-    <li><a href="#" onclick="showRomansRoad()">Using the "Romans Road" method</a></li>
+    <li><a href="#" onclick="showRomansRoad()">Click here for the explanation!</a></li>
 </ul>
 
 <!-- The Popup Modal -->
-<div id="popup-overlay"></div>
+<div id="popup-overlay" onclick="closePopup()"></div>
 <div id="popup">
     <h2 id="popup-title"></h2>
     <div id="popup-content"></div>
@@ -125,14 +133,7 @@
             content += `<p><strong>${item.verse}</strong><br>${item.text}<br><i>${item.explanation}</i></p>`;
         });
 
-        // Adding the illustration section
-        content += `
-        <div id="illustration">
-            <img src="https://via.placeholder.com/600x300.png?text=Romans+Road+Illustration" alt="Romans Road Illustration">
-            <p><i>Illustration: A visual representation of the Romans Road to salvation.</i></p>
-        </div>`;
-
-        // Show the popup with the explanation and illustration
+        // Show the popup with the explanation
         showPopup("The Romans Road", content);
     }
 
